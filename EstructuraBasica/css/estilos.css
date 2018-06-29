@@ -1,22 +1,50 @@
-#contenedor1{
-  display: flex;
-  flex-direction: row;
-}
-
- h1{
+#encabezado{
   background-color: #5B7989;
-  color: white;
-  text-shadow: 2px 2px 3px #02010A;
   border-radius: 10px 10px 0px 0px;
-  display: inline;
-  width: 80%;
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
 }
 
-#MenuPrincipal{
-  float: right;   
-}
-
-#MenuPrincipal a{
-  background-color: #5B7989;
+#encabezado h1{
   color: white;
+  font-size: 40px;
+  padding: 1px 1px 1px 1px;
+  margin: 5px 0.5px 0.5px 10px;
+  flex: 2 1 65%;
+  order: 1;
+}
+
+#encabezado navbar{
+  font-size: 20px;
+  padding: 1px 1px 1px 1px;
+  margin: 10px 0.5px 0.5px 10px;
+  flex: 1 1 25%;
+  order: 2;
+}
+
+#encabezado navbar a{
+  color: white;
+}
+
+a:first-child{
+  text-decoration: none;
+}
+
+
+
+@media (max-width:420px) {
+  #encabezado{
+    display: flex;
+    flex-flow: column;
+  }
+  #encabezado h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  #encabezado navbar{
+    text-align: center;
+    font-size: 15px;
+  }
 }
