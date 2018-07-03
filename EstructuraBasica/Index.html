@@ -18,8 +18,8 @@
       }
       #imgtercer img{
         border: 2px solid black;
-        transition-property: translateY, translateX;
-        transition-duration: 1s, 1s;
+        transition-property: transform;
+        transition-duration: 1s;
       }
       #imgsecundaria img{
         border: 2px solid black;
@@ -33,20 +33,10 @@
         border: 0px;
       }
       #imgtercer img:hover{
-        /* transform: translate3d(20px, -5px, 0px); */
-        /* transform: translateX(20px);
-        transform: translateY(-5px); */
-        animation: mitraslado 4s;
+        transform: translate3d(20px, -5px, 0px);
       }
 
-      @-webkit-keyframes mitraslado{
-        50%{
-          transform: translate3d(20px, 0px, 0px);
-        }
-        100%{
-          transform: translate3d(20px, -5px, 0px);
-        }
-      }
+
 
     </style>
 
