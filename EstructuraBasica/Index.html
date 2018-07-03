@@ -13,6 +13,41 @@
       a:first-child{
         text-decoration: none;
       }
+      #imgcentral img{
+        border: 2px solid black;
+      }
+      #imgtercer img{
+        border: 2px solid black;
+        transition-property: translateY, translateX;
+        transition-duration: 1s, 1s;
+      }
+      #imgsecundaria img{
+        border: 2px solid black;
+        transition-property: transform;
+        transition-duration: 1s;
+      }
+      #imgsecundaria img:hover{
+        transform: rotate(10deg);
+        -webkit-filter:drop-shadow(5px 5px 2px #82c3a6);
+        filter:drop-shadow(5px 5px 2px #82c3a6);
+        border: 0px;
+      }
+      #imgtercer img:hover{
+        /* transform: translate3d(20px, -5px, 0px); */
+        /* transform: translateX(20px);
+        transform: translateY(-5px); */
+        animation: mitraslado 4s;
+      }
+
+      @-webkit-keyframes mitraslado{
+        50%{
+          transform: translate3d(20px, 0px, 0px);
+        }
+        100%{
+          transform: translate3d(20px, -5px, 0px);
+        }
+      }
+
     </style>
 
   </head>
@@ -28,7 +63,25 @@
     </header>
 
     <section>
-      
+      <div id="contendor">
+
+        <div id="imgcentral">
+          <img src="img/paisaje3.jpg" alt="imagen central" width="100%">
+        </div>
+
+        <div id="contenedor1">
+          <div id="imgsecundaria">
+            <img src="img/paisaje1.jpg" alt="imagen secundaria" width="100%">
+          </div>
+
+          <div id="imgtercer">
+            <img src="img/rostro.jpg" alt="rostro" width="100%">
+          </div>
+        </div>
+
+
+      </div>
+
     </section>
 
     <footer></footer>

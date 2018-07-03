@@ -1,3 +1,6 @@
+body{
+  background-color: #02010a
+}
 #encabezado{
   background-color: #5B7989;
   border-radius: 10px 10px 0px 0px;
@@ -11,7 +14,7 @@
   color: white;
   font-size: 40px;
   padding: 1px 1px 1px 1px;
-  margin: 5px 0.5px 0.5px 10px;
+  margin: 5px 2px 0.5px 5px;
   flex: 2 1 65%;
   order: 1;
   text-shadow: 2px 2px 2px #02010a;
@@ -20,7 +23,7 @@
 #encabezado navbar{
   font-size: 20px;
   padding: 1px 1px 1px 1px;
-  margin: 10px 0.5px 0.5px 10px;
+  margin: 15px 0.5px 0.5px 10px;
   flex: 1 1 25%;
   order: 2;
 }
@@ -28,18 +31,110 @@
 #encabezado navbar a{
   color: white;
 }
+/* /////////////////////////////////////// */
 
-@media (max-width:420px) {
+
+
+/* /////////////////////////////////////////////// */
+
+/* wrapper */
+#contendor{
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #82c3a6;
+}
+#contenedor1{
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+  border: 1px;
+}
+
+@media screen and (max-width:421px) {
   #encabezado{
     display: flex;
     flex-flow: column;
   }
   #encabezado h1{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   #encabezado navbar{
+    margin: 2px 0.5px 0.5px 10px;
     text-align: center;
     font-size: 17px;
   }
+
+  #imgcentral{
+    width: 100%;
+    margin: 2px auto;
+  }
+  #imgsecundaria{
+    width: 100%;
+    margin: 2px auto;
+  }
+  #imgtercer{
+    width: 100%;
+    margin: 2px auto;
+  }
+}
+
+@media screen and (min-width:422px) {
+  #encabezado{
+    display: flex;
+    flex-flow: column;
+  }
+  #encabezado h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  #encabezado navbar{
+    margin: 2px 0.5px 0.5px 10px;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  #imgcentral{
+    width: 90%;
+    margin: 2px auto;
+  }
+  #imgsecundaria{
+    width: 40%;
+    margin: 2px auto;
+  }
+  #imgtercer{
+    width: 40%;
+    margin: 2px auto;
+  }
+
+}
+
+@media screen and (min-width:700px) {
+  #encabezado{
+    display: flex;
+    flex-flow: row;
+  }
+  #encabezado h1{
+    font-size: 35px;
+    text-align: left;
+  }
+  #encabezado navbar{
+    margin: 15px 0.5px 0.5px 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #imgcentral{
+    width: 90%;
+    margin: 2px auto;
+  }
+  #imgsecundaria{
+    width: 40%;
+    margin: 2px auto;
+  }
+  #imgtercer{
+    width: 40%;
+    margin: 2px auto;
+  }
+
 }
