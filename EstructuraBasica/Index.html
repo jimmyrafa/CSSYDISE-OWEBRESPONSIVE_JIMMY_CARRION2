@@ -7,77 +7,139 @@
     <meta name="keywords" content="Fotografias, galería, paisajes, rostros">
     <meta name="description" content="Página de fotografías de paisajes, rostros">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <title>EVALUACIÓN CSS Y DISEÑO WEB RESPONSIVE_JIMMY_CARRION</title>
-
+    
     <style media="screen">
       a:first-child{
         text-decoration: none;
       }
-      #imgcentral img{
+      #img_paisaje1 img{
         border: 2px solid black;
       }
-      #imgtercer img{
-        border: 2px solid black;
-        transition-property: transform;
-        transition-duration: 1s;
-      }
-      #imgsecundaria img{
+      #img_rostro img{
         border: 2px solid black;
         transition-property: transform;
         transition-duration: 1s;
       }
-      #imgsecundaria img:hover{
+      #img_paisaje2 img{
+        border: 2px solid black;
+        transition-property: transform;
+        transition-duration: 1s;
+      }
+      #img_paisaje2 img:hover{
         transform: rotate(10deg);
-        -webkit-filter:drop-shadow(5px 5px 2px #82c3a6);
-        filter:drop-shadow(5px 5px 2px #82c3a6);
+        -webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+        filter:drop-shadow(2px 2px 2px #82c3a6);
         border: 0px;
       }
-      #imgtercer img:hover{
+      #img_rostro img:hover{
         transform: translate3d(20px, -5px, 0px);
-        -webkit-filter:drop-shadow(5px 5px 2px #82c3a6);
-        filter:drop-shadow(5px 5px 2px #82c3a6);
+        -webkit-filter:drop-shadow(2px 2px 2px #82c3a6);
+        filter:drop-shadow(2px 2px 2px #82c3a6);
         border: 0px;
       }
-
-
-
     </style>
 
   </head>
   <body>
-
-    <header>
-      <section id="encabezado">
-        <h1>Comenzando con la Fotografía</h1>
-        <navbar>
-          <a href="#Inicio">Inicio</a> <a href="Paisajes.html">Paisajes</a> <a href="Retratos.html">Retratos</a>
-        </navbar>
-      </section>
-    </header>
-
-    <section>
-      <div id="contendor">
-
-        <div id="imgcentral">
-          <img src="img/paisaje3.jpg" alt="imagen central" width="100%">
+    <div id="cont_master">
+      <header>
+        <div id="cont_encabezado">
+          <h1>Comenzando con la Fotografía</h1>
+          <navbar >
+            <a href="#Inicio">Inicio</a> <a href="Paisajes.html">Paisajes</a> <a href="Retratos.html">Retratos</a>
+          </navbar>
         </div>
+      </header>
 
-        <div id="contenedor1">
-          <div id="imgsecundaria">
+      <section>
+        <div id="img_paisaje1">
+            <img src="img/paisaje3.jpg" alt="imagen central" width="100%">
+          </div>
+
+        <div id="cont_central">
+
+          <div id="img_paisaje2">
             <img src="img/paisaje1.jpg" alt="imagen secundaria" width="100%">
+            <a href="Paisajes.html">Paisajes</a>
           </div>
 
-          <div id="imgtercer">
+          <div id="img_rostro">
             <img src="img/rostro.jpg" alt="rostro" width="100%">
+            <a href="Retratos.html">Retratos</a>
           </div>
         </div>
+      </section>
 
+      <footer>
+        <div id="cont_piepagnina">
+          <div id="cont_pie_contactos">
+            <table>
+              <thead>
+                <th>Contactos</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>info@fotografia.com</td>
+                </tr>
+                <tr>
+                  <td>Av. Manuel Carrión Pinzano</td>
+                </tr>
+                <tr>
+                  <td>Cel: 0985120883</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="cont_pie_terminos">
+            <table>
+              <thead>
+                <th>Términos</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Conoce nuestros términos y condiciones...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="cont_pie_redes_sociales">
+            <table>
+              <thead>
+                <th>Redes Sociales</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Comparte en nuestras redes</td>
+                </tr>
+                <tr>
+                  <td><img src="img/indfacebook.png" alt="img facebook" width="15px"> Comenzando Fotografía</td>
+                </tr>
+                <tr>
+                  <td><img src="img/indtwwietter.jpg" alt="img twwitter" width="15px">@Comenzando Fotografía</td>
+                </tr>
+                <tr>
+                  <td><img src="img/indinstagram.jpg" alt="img instagram" width="15px">ComenzandoFotografía</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="cont_pie_derechos">
+            <table>
+              <thead>
+                <th>Derechos</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>@Copyright-2018</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </footer>
 
-      </div>
-
-    </section>
-
-    <footer></footer>
-
+    </div>
   </body>
 </html>
