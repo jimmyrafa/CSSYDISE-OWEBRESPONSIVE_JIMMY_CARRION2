@@ -108,12 +108,37 @@ body{
 
 #cont_piepagnina div{
   margin: 15px 2px 2px 2px;
-  /* border: 1px solid black; */
 }
 
 #cont_pie_contactos, #cont_pie_terminos, #cont_pie_redes_sociales, #cont_pie_derechos table{
   text-align: left;
   text-indent: 0.25cm;
+}
+
+/* ///////////////////Paisajes-Rostros//////////////////////////// */
+
+#cont_central_1{
+  margin: 0 auto;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+}
+
+#cont_central_1 div img{
+  width: 95%;
+  border: 2px solid black;
+
+}
+
+#cont_central_1 div{
+  -webkit-flex: 1 1 30%;
+  flex: 1 1 30%;
+  margin: 5px;
+  text-align: center;
 }
 
 /* /////////////////////////////////////////////////////////// */
@@ -170,6 +195,14 @@ body{
     flex: 1 1 auto;
     order: 4;
   }
+
+
+  /* ///////////////////paisajes-rostros////////////////// */
+  #cont_central_1 div{
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  text-align: center;
+  }
 }
 
 @media (min-width:422px) and (max-width:900px) {
@@ -183,5 +216,10 @@ body{
   }
   #cont_piepagnina{
     justify-content:space-between;
+  }
+
+  #cont_central_1 div{
+  -webkit-flex: 1 1 40%;
+  text-align: center;
   }
 }
